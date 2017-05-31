@@ -6,16 +6,16 @@ By default, WordPress is using an untrusted data to create a password reset link
 
 If the From email header is not present WordPress will use the server one.
 
- **See wp-includes/pluggable.php**
- 
-> if ( !isset( $from_email ) ) { <br>
-> // Get the site domain and get rid of www. <br>
-> $sitename = strtolower( $_SERVER['SERVER_NAME'] ); <br>
-> if ( substr( $sitename, 0, 4 ) == 'www.' ) { <br>
-> $sitename = substr( $sitename, 4 ); <br>
-> } <br>
-> $from_email = 'wordpress@' . $sitename; <br>
-> } <br>
+ *See wp-includes/pluggable.php*
+
+      if ( !isset( $from_email ) ) { 
+      // Get the site domain and get rid of www. 
+      $sitename = strtolower( $_SERVER['SERVER_NAME'] ); 
+      if ( substr( $sitename, 0, 4 ) == 'www.' ) { 
+      $sitename = substr( $sitename, 4 );
+      } 
+      $from_email = 'wordpress@' . $sitename; 
+      } 
 
 
 **How the attack works?**
