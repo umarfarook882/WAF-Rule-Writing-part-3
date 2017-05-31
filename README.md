@@ -28,7 +28,7 @@ If the From email header is not present WordPress will use the server one.
     6.The reply is delivered to the attacker’s inbox, they are then able to use the secret link and log in to the WordPress user’s account. 
  <br>
  
-**How to prevent wordpress from 0-day exploits by WAF rule?**
+**How to prevent WordPress from 0-day attack by WAF rule?**
     
     1.Analyse the vulnerability and draft a overview of the exploit process. 
     2.Find out which parameter or header is need  for this exploit to work. 
@@ -71,7 +71,9 @@ If the From email header is not present WordPress will use the server one.
 
     3.As in our case HOST Header is one where attacker try to change the Host for this exploit to work. 
     4.I have written a rule to check the Host Header, whenever the user requesting for resetting the  password for admin account.               So if host header value doesn't it match with actual host name. WAF will block it with status:403. 
-    
+   
+<br> 
+
 **Demo Video**
   
    [![Alt text](https://img.youtube.com/vi/YFAHkS24EPY/0.jpg)](https://www.youtube.com/watch?v=YFAHkS24EPY)
