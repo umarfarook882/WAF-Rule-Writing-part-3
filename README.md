@@ -1,4 +1,4 @@
-# WAF Rule to prevent Wordpress from 0-day Attacks
+# WAF Rule to prevent WordPress from 0-day Attack
 
   **(CVE-2017-8295) Wordpress 4.7.4 - Unauthorized Password Reset Vulnerability**
  
@@ -72,7 +72,7 @@ If the From email header is not present WordPress will use the server one.
     3.As in our case HOST Header is one where attacker try to change the Host for this exploit to work. 
     4.I have written a rule to check the Host Header, whenever the user requesting for resetting the  password for admin account.               So if host header value doesn't it match with actual host name. WAF will block it with status:403. 
     
-**Demo**
+**Demo Video**
   
    [![Alt text](https://img.youtube.com/vi/YFAHkS24EPY/0.jpg)](https://www.youtube.com/watch?v=YFAHkS24EPY)
 
