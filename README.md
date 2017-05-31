@@ -73,6 +73,7 @@ If the From email header is not present WordPress will use the server one.
     4.I have written a rule to check the Host Header, whenever the user requesting for resetting the  password for admin account.               So if host header value doesn't it match with actual host name. WAF will block it with status:403. 
     
 **Demo**
-  soon to be launched...
+  
+    soon to be launched...
 
       
