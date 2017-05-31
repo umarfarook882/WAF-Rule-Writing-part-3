@@ -28,7 +28,7 @@ If the From email header is not present WordPress will use the server one.
     6.The reply is delivered to the attacker’s inbox, they are then able to use the secret link and log in to the WordPress user’s account. 
  <br>
  
-**How to fix it by WAF rule?**
+**How to prevent wordpress from 0-day exploits by WAF rule?**
     
     1.Analyse the vulnerability and draft a overview of the exploit process. 
     2.Find out which parameter or header is need  for this exploit to work. 
