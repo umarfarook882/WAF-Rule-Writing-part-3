@@ -69,8 +69,8 @@ If the From email header is not present WordPress will use the server one.
       user_login=fos%40gmail.com&redirect_to=&wp-submit=Get+New+Password 
 <br>
 
-    3.As in our case HOST Header is one where attacker try to change the Host for this exploit to work. 
-    4.I have written a rule to check the Host Header, whenever the user requesting for resetting the  password for admin account.               So if host header value doesn't it match with actual host name. WAF will block it with status:403. 
+    3.As in our case HOST (http Header) is one where attacker try to change the Host name for this exploit to work. 
+    4.I have written a rule to check the Host Header, whenever the user requesting for resetting the  password for admin account.               So if host header  doesn't it match with actual host name. WAF will block it with status:403. 
    
 <br> 
 
