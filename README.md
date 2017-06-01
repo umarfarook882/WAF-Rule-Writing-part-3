@@ -1,6 +1,6 @@
 # WAF Rule to prevent WordPress from 0-day Attack
 
-  **(CVE-2017-8295) Wordpress 4.7.4 - Unauthorized Password Reset Vulnerability**
+  **(CVE-2017-8295) Wordpress <= 4.7.4 - Unauthorized Password Reset Vulnerability**
  
 By default, WordPress is using an untrusted data to create a password reset link. That is supposed to be delivered only to the email address associated with the owner’s account.
 
